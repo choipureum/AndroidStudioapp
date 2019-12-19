@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding='20dp'
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom='20dp'
+        android:orientation='horizontal'>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_layout"
+            android:layout_weight='1'
+            android:onClick='onClick1'
+            android:text='저장' />
+
+        <Button
+            android:id="@+id/load_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight='1'
+            android:onClick='onClick1'
+            android:text='불러오기' />
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btn_layout"
+            android:layout_weight='1'
+            android:onClick='onClick1'
+            android:text='삭제' />
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backMain"
+            android:text="로그아웃"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id='@+id/memo_edit'
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below='@+id/btn_layout'
+        android:layout_alignParentLeft='true'
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="57dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="top"
+        android:hint='내용을 입력하세요' />
+
+</RelativeLayout>
+
+
